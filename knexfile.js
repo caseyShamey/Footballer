@@ -4,7 +4,7 @@ module.exports = {
   development: {
     client: 'pg',
     connection: {
-      host: 'ec2-18-212-11-18.compute-1.amazonaws.com',
+      host: 'localhost',
       user: `${login.user}`,
       password: `${login.password}`,
       database: 'Feed',

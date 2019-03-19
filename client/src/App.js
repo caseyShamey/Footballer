@@ -4,9 +4,9 @@ import axios from 'axios';
 
 import Feed from './components/Feed';
 
-const onlineDb = require('../../config/keys');
+// const onlineDb = require('../../config/keys');
 
-const api = onlineDb.api;
+// const api = onlineDb.api;
 
 class App extends Component {
   constructor(props) {

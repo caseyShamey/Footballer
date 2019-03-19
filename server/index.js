@@ -18,10 +18,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // const res = await client.query('SELECT * FROM feeds WHERE id = 10000000')
 // feed endpoint
 app.get('/feeds', (req, res) => {
-  console.log('test');
-  knex.select().from('feeds').orderBy('timestamp', 'desc').limit(10)
+  knex.select().from('feeds').limit(10)
     .then((data) => {
-      console.log(data.timestamp);
+      // console.log(data.timestamp);
       res.send(data);
     });
 });
